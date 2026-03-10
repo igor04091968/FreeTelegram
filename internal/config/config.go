@@ -16,15 +16,20 @@ type Config struct {
 }
 
 type TelegramConfig struct {
-	APIKey  string `json:"api_key"`
+	APIKey   string  `json:"api_key"`
 	AdminIDs []int64 `json:"admin_ids"`
-	QueueMax int `json:"queue_max"`
+	QueueMax int     `json:"queue_max"`
 }
 
 type RoutingConfig struct {
-	RouteFor        []string `json:"route_for"`
-	ExcludeRouteFor []string `json:"exclude_route_for"`
-	DNSServerList   []string `json:"dns_server_list"`
+	RouteFor           []string `json:"route_for"`
+	ExcludeRouteFor    []string `json:"exclude_route_for"`
+	DNSServerList      []string `json:"dns_server_list"`
+	Domains            []string `json:"domains"`
+	AggregateThreshold int      `json:"aggregate_threshold"`
+	ApplyRoutes        bool     `json:"apply_routes"`
+	Interface          string   `json:"interface"`
+	UpdateIntervalSec  int      `json:"update_interval_sec"`
 }
 
 type ModulesConfig struct {

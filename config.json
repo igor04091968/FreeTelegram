@@ -8,7 +8,12 @@
   "routing": {
     "route_for": [],
     "exclude_route_for": [],
-    "dns_server_list": ["1.1.1.1", "8.8.8.8"]
+    "dns_server_list": ["1.1.1.1", "8.8.8.8"],
+    "domains": ["chatgpt.com", "openai.com"],
+    "aggregate_threshold": 3,
+    "apply_routes": false,
+    "interface": "anet-client",
+    "update_interval_sec": 300
   },
   "modules": {
     "enabled": [],
