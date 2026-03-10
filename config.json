@@ -1,0 +1,17 @@
+{
+  "config_version": 1,
+  "telegram": {
+    "api_key": "",
+    "admin_ids": [],
+    "queue_max": 50
+  },
+  "routing": {
+    "route_for": [],
+    "exclude_route_for": [],
+    "dns_server_list": ["1.1.1.1", "8.8.8.8"]
+  },
+  "modules": {
+    "enabled": [],
+    "default": ""
+  }
+}
